@@ -36,16 +36,16 @@
 # Скриншоты
 
 #*Главное меню*
-![] (https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_12.png)
+![](https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_12.png)
 
 #*Игровой процес*
-![] (https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_13.png)
+![](https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_13.png)
 
 #*Окончание игры при победе*
-![] (https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_14.png)
+![](https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_14.png)
 
 #*Окончание игры при проигрыше*
-![] (https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_15.png)
+![](https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_15.png)
 
 
 
