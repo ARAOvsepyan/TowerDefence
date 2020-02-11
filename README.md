@@ -20,6 +20,17 @@
 - [ ] Написание документации
 - [ ] Настройка CI
 
+>#### *Покрытие игры тестами*
+>
+>>
+
 >>#### *Пример написанной документации*
-![](https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_9.png)
+>>
+>>![](https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_9.png)
+
+>>> *Настройка CI*
+>>>
+>>>
+
+# Скриншоты
 
