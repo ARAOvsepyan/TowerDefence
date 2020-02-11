@@ -21,5 +21,5 @@
 - [ ] Настройка CI
 
 >>#### *Пример написанной документации*
-![]https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_9.png
+![](https://github.com/ARAOvsepyan/TowerDefence/blob/master/Images/Image_9.png)
 
