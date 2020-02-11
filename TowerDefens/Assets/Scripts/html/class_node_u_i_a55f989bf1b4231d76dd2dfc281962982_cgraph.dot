@@ -1,0 +1,16 @@
+digraph "NodeUI.Upgrade"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="NodeUI.Upgrade",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Build.DeselectNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_build.html#ab62ef1a446b093475cd4c6318b8f45b2",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NodeUI.Hide",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node_u_i.html#aa5077f5b0ae947b814e19ee9b17a2817",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Node.Upgrate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html#a9a7da266ac5094bbff1e56eaadd8b786",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Node.GetBuildPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html#afa0fce3455cabf190ff038f3b677a723",tooltip=" "];
+}

@@ -1,0 +1,147 @@
+\hypertarget{class_wave_spawner}{}\doxysection{Wave\+Spawner Class Reference}
+\label{class_wave_spawner}\index{WaveSpawner@{WaveSpawner}}
+
+
+Класс создания игровых волн  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_wave_spawner_a64183b727f9f321d2c5f672164cf6177}{enemyP}}
+\begin{DoxyCompactList}\small\item\em Координаты врага \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_wave_spawner_a7ae6eda14645513771a088d984cd29d3}{spawn\+Point}}
+\begin{DoxyCompactList}\small\item\em Координаты точки появления врагов \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_wave_spawner_a00c3251e99d07cf25f04a6911950a083}{time\+Between\+Waves}} = 4.\+5f
+\begin{DoxyCompactList}\small\item\em Время между волнами \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_wave_spawner_a59a51c406d4bcdd3657256382c42e177}{wave\+Countdown\+Text}}
+\begin{DoxyCompactList}\small\item\em Цекстовая визуализация обратного отсчета \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_wave_spawner_a555153cbbe6e140062d5d4816f619e80}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Создает новую волну каждые 3.\+5 секунды \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_wave_spawner_a0414e37e697e101b84ca3fb59ad2d9ec}{Spawn\+Wave}} ()
+\begin{DoxyCompactList}\small\item\em Создание новых волн \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wave_spawner_a6e5387295f77eda40612fce61ab436b3}{Spawn\+Enemy}} ()
+\begin{DoxyCompactList}\small\item\em Создание врага \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_wave_spawner_afed17db47fff6815d74b8d1e5162505c}{countdown}} = 3.\+5f
+\begin{DoxyCompactList}\small\item\em Обратный отсчет перед началом игры \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_wave_spawner_a50c2c9a4cffae686af46f474c784ffc8}{wave\+Index}} = 0
+\begin{DoxyCompactList}\small\item\em Номер волны \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс создания игровых волн 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wave_spawner_a6e5387295f77eda40612fce61ab436b3}\label{class_wave_spawner_a6e5387295f77eda40612fce61ab436b3}} 
+\index{WaveSpawner@{WaveSpawner}!SpawnEnemy@{SpawnEnemy}}
+\index{SpawnEnemy@{SpawnEnemy}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{SpawnEnemy()}{SpawnEnemy()}}
+{\footnotesize\ttfamily void Wave\+Spawner.\+Spawn\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Создание врага 
+
+\mbox{\Hypertarget{class_wave_spawner_a0414e37e697e101b84ca3fb59ad2d9ec}\label{class_wave_spawner_a0414e37e697e101b84ca3fb59ad2d9ec}} 
+\index{WaveSpawner@{WaveSpawner}!SpawnWave@{SpawnWave}}
+\index{SpawnWave@{SpawnWave}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{SpawnWave()}{SpawnWave()}}
+{\footnotesize\ttfamily I\+Enumerator Wave\+Spawner.\+Spawn\+Wave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Создание новых волн 
+
+\begin{DoxyReturn}{Returns}
+Создает волну с ожиданием в 0.\+5 сек
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_wave_spawner_a555153cbbe6e140062d5d4816f619e80}\label{class_wave_spawner_a555153cbbe6e140062d5d4816f619e80}} 
+\index{WaveSpawner@{WaveSpawner}!Update@{Update}}
+\index{Update@{Update}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Wave\+Spawner.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Создает новую волну каждые 3.\+5 секунды 
+
+Вызывается один раз за кадр. Это основное событие для прорисовки кадра. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_wave_spawner_afed17db47fff6815d74b8d1e5162505c}\label{class_wave_spawner_afed17db47fff6815d74b8d1e5162505c}} 
+\index{WaveSpawner@{WaveSpawner}!countdown@{countdown}}
+\index{countdown@{countdown}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{countdown}{countdown}}
+{\footnotesize\ttfamily float Wave\+Spawner.\+countdown = 3.\+5f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обратный отсчет перед началом игры 
+
+\mbox{\Hypertarget{class_wave_spawner_a64183b727f9f321d2c5f672164cf6177}\label{class_wave_spawner_a64183b727f9f321d2c5f672164cf6177}} 
+\index{WaveSpawner@{WaveSpawner}!enemyP@{enemyP}}
+\index{enemyP@{enemyP}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{enemyP}{enemyP}}
+{\footnotesize\ttfamily Transform Wave\+Spawner.\+enemyP}
+
+
+
+Координаты врага 
+
+\mbox{\Hypertarget{class_wave_spawner_a7ae6eda14645513771a088d984cd29d3}\label{class_wave_spawner_a7ae6eda14645513771a088d984cd29d3}} 
+\index{WaveSpawner@{WaveSpawner}!spawnPoint@{spawnPoint}}
+\index{spawnPoint@{spawnPoint}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{spawnPoint}{spawnPoint}}
+{\footnotesize\ttfamily Transform Wave\+Spawner.\+spawn\+Point}
+
+
+
+Координаты точки появления врагов 
+
+\mbox{\Hypertarget{class_wave_spawner_a00c3251e99d07cf25f04a6911950a083}\label{class_wave_spawner_a00c3251e99d07cf25f04a6911950a083}} 
+\index{WaveSpawner@{WaveSpawner}!timeBetweenWaves@{timeBetweenWaves}}
+\index{timeBetweenWaves@{timeBetweenWaves}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{timeBetweenWaves}{timeBetweenWaves}}
+{\footnotesize\ttfamily float Wave\+Spawner.\+time\+Between\+Waves = 4.\+5f}
+
+
+
+Время между волнами 
+
+\mbox{\Hypertarget{class_wave_spawner_a59a51c406d4bcdd3657256382c42e177}\label{class_wave_spawner_a59a51c406d4bcdd3657256382c42e177}} 
+\index{WaveSpawner@{WaveSpawner}!waveCountdownText@{waveCountdownText}}
+\index{waveCountdownText@{waveCountdownText}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{waveCountdownText}{waveCountdownText}}
+{\footnotesize\ttfamily Text Wave\+Spawner.\+wave\+Countdown\+Text}
+
+
+
+Цекстовая визуализация обратного отсчета 
+
+\mbox{\Hypertarget{class_wave_spawner_a50c2c9a4cffae686af46f474c784ffc8}\label{class_wave_spawner_a50c2c9a4cffae686af46f474c784ffc8}} 
+\index{WaveSpawner@{WaveSpawner}!waveIndex@{waveIndex}}
+\index{waveIndex@{waveIndex}!WaveSpawner@{WaveSpawner}}
+\doxysubsubsection{\texorpdfstring{waveIndex}{waveIndex}}
+{\footnotesize\ttfamily int Wave\+Spawner.\+wave\+Index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Номер волны 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_wave_spawner_8cs}{Wave\+Spawner.\+cs}}\end{DoxyCompactItemize}

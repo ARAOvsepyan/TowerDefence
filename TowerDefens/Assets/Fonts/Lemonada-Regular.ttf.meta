@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: b8343d1326870e0489d3b7f9cedaa773
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lemonada
+  fontNames:
+  - Lemonada
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 14351205bea4db6418fa92d1a6897b17, type: 3}
+  - {fileID: 12800000, guid: 01ea9bd9464a708489a9c578e0fa7843, type: 3}
+  - {fileID: 12800000, guid: 22be7dab18dce7147825e75f18f8e977, type: 3}
+  - {fileID: 12800000, guid: 1b990c6c1006baa4b83743b312ab0f15, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

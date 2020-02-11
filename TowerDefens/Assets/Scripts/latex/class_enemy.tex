@@ -1,0 +1,172 @@
+\hypertarget{class_enemy}{}\doxysection{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+Класс \char`\"{}Враг\char`\"{}.  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_a12672c4031953055b32228f1ff4d8d7a}{Take\+Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Метод получения урона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_enemy_ad58edec05f9a44da44ef1021a4005d06}{speed}} = 10f
+\begin{DoxyCompactList}\small\item\em Скорость передвежения \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_a0c22e3b96d3c5a4d5b278188b5ba3cfb}{health}} = 200
+\begin{DoxyCompactList}\small\item\em Количество жизней \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_aa13c3f7432b736fbe2b5a1eb5f88c080}{value}} = 50
+\begin{DoxyCompactList}\small\item\em Количество денег за убийство врага \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_ae3442338205f74a157f1a311640e84eb}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Обьект получет значение первой точки перемещения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ac8eb629ba2895e86aa7f940334c94c02}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Метод уничтожения обьекта \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a80560cd7c04c1c0846715740bad699d1}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Мeтод перемещения обьекта от одной точки к другой \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a5d6489f72b20ed5b03ab737638a6ef07}{Get\+Next\+Waypoint}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения следующей точки перемещения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5}{Reach\+The\+End}} ()
+\begin{DoxyCompactList}\small\item\em Метод для уменьшения жизней игрока \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_enemy_aecb5e62b92b04a66956289d216d61e1b}{target}}
+\begin{DoxyCompactList}\small\item\em Обьект который будет перемещаться \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_a2a72c8cd4fa35f99610bd839abcd93cc}{wavepoint\+Index}} = 0
+\begin{DoxyCompactList}\small\item\em Индекс точки перемещения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс \char`\"{}Враг\char`\"{}. 
+
+Данный класс хранит информацию о вражеских характеристиках, а так же функции для перемещения и нанесении урона ~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_ac8eb629ba2895e86aa7f940334c94c02}\label{class_enemy_ac8eb629ba2895e86aa7f940334c94c02}} 
+\index{Enemy@{Enemy}!Die@{Die}}
+\index{Die@{Die}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Enemy.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод уничтожения обьекта 
+
+\mbox{\Hypertarget{class_enemy_a5d6489f72b20ed5b03ab737638a6ef07}\label{class_enemy_a5d6489f72b20ed5b03ab737638a6ef07}} 
+\index{Enemy@{Enemy}!GetNextWaypoint@{GetNextWaypoint}}
+\index{GetNextWaypoint@{GetNextWaypoint}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{GetNextWaypoint()}{GetNextWaypoint()}}
+{\footnotesize\ttfamily void Enemy.\+Get\+Next\+Waypoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод для получения следующей точки перемещения 
+
+Обект будет уничтожен после получении последней точки пермещения и игроку нанесется урон \mbox{\Hypertarget{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5}\label{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5}} 
+\index{Enemy@{Enemy}!ReachTheEnd@{ReachTheEnd}}
+\index{ReachTheEnd@{ReachTheEnd}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{ReachTheEnd()}{ReachTheEnd()}}
+{\footnotesize\ttfamily void Enemy.\+Reach\+The\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод для уменьшения жизней игрока 
+
+Жизни уменьшаются если враг доходит до конца \mbox{\Hypertarget{class_enemy_ae3442338205f74a157f1a311640e84eb}\label{class_enemy_ae3442338205f74a157f1a311640e84eb}} 
+\index{Enemy@{Enemy}!Start@{Start}}
+\index{Start@{Start}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Enemy.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обьект получет значение первой точки перемещения 
+
+Start\+: Одна из функций событий, вызывается перед прорисовкой первого фрейма \mbox{\Hypertarget{class_enemy_a12672c4031953055b32228f1ff4d8d7a}\label{class_enemy_a12672c4031953055b32228f1ff4d8d7a}} 
+\index{Enemy@{Enemy}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily void Enemy.\+Take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+
+
+Метод получения урона 
+
+\char`\"{}int damage\char`\"{} количество получаемого урона \mbox{\Hypertarget{class_enemy_a80560cd7c04c1c0846715740bad699d1}\label{class_enemy_a80560cd7c04c1c0846715740bad699d1}} 
+\index{Enemy@{Enemy}!Update@{Update}}
+\index{Update@{Update}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Enemy.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Мeтод перемещения обьекта от одной точки к другой 
+
+Update\+: Одна из функций событий, \mbox{\hyperlink{class_enemy_a80560cd7c04c1c0846715740bad699d1}{Update()}} вызывается один раз за кадр. Это основное событие для прорисовки кадра. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_a0c22e3b96d3c5a4d5b278188b5ba3cfb}\label{class_enemy_a0c22e3b96d3c5a4d5b278188b5ba3cfb}} 
+\index{Enemy@{Enemy}!health@{health}}
+\index{health@{health}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Enemy.\+health = 200}
+
+
+
+Количество жизней 
+
+\mbox{\Hypertarget{class_enemy_ad58edec05f9a44da44ef1021a4005d06}\label{class_enemy_ad58edec05f9a44da44ef1021a4005d06}} 
+\index{Enemy@{Enemy}!speed@{speed}}
+\index{speed@{speed}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Enemy.\+speed = 10f}
+
+
+
+Скорость передвежения 
+
+\mbox{\Hypertarget{class_enemy_aecb5e62b92b04a66956289d216d61e1b}\label{class_enemy_aecb5e62b92b04a66956289d216d61e1b}} 
+\index{Enemy@{Enemy}!target@{target}}
+\index{target@{target}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Transform Enemy.\+target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обьект который будет перемещаться 
+
+\mbox{\Hypertarget{class_enemy_aa13c3f7432b736fbe2b5a1eb5f88c080}\label{class_enemy_aa13c3f7432b736fbe2b5a1eb5f88c080}} 
+\index{Enemy@{Enemy}!value@{value}}
+\index{value@{value}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily int Enemy.\+value = 50}
+
+
+
+Количество денег за убийство врага 
+
+\mbox{\Hypertarget{class_enemy_a2a72c8cd4fa35f99610bd839abcd93cc}\label{class_enemy_a2a72c8cd4fa35f99610bd839abcd93cc}} 
+\index{Enemy@{Enemy}!wavepointIndex@{wavepointIndex}}
+\index{wavepointIndex@{wavepointIndex}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{wavepointIndex}{wavepointIndex}}
+{\footnotesize\ttfamily int Enemy.\+wavepoint\+Index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Индекс точки перемещения 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_enemy_8cs}{Enemy.\+cs}}\end{DoxyCompactItemize}
