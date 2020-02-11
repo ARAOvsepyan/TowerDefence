@@ -7,13 +7,31 @@
 
 
 
-Inherits Mono\+Behaviour.
+Inheritance diagram for Enemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_enemy__inherit__graph}
+\end{center}
+\end{figure}
 
+
+Collaboration diagram for Enemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_enemy__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_enemy_a12672c4031953055b32228f1ff4d8d7a}{Take\+Damage}} (int damage)
-\begin{DoxyCompactList}\small\item\em Метод получения урона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Метод получения урона \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a80560cd7c04c1c0846715740bad699d1}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Мeтод перемещения обьекта от одной точки к другой \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,8 +48,6 @@ void \mbox{\hyperlink{class_enemy_ae3442338205f74a157f1a311640e84eb}{Start}} ()
 \begin{DoxyCompactList}\small\item\em Обьект получет значение первой точки перемещения \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_enemy_ac8eb629ba2895e86aa7f940334c94c02}{Die}} ()
 \begin{DoxyCompactList}\small\item\em Метод уничтожения обьекта \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_enemy_a80560cd7c04c1c0846715740bad699d1}{Update}} ()
-\begin{DoxyCompactList}\small\item\em Мeтод перемещения обьекта от одной точки к другой \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_enemy_a5d6489f72b20ed5b03ab737638a6ef07}{Get\+Next\+Waypoint}} ()
 \begin{DoxyCompactList}\small\item\em Метод для получения следующей точки перемещения \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5}{Reach\+The\+End}} ()
@@ -62,6 +78,14 @@ int \mbox{\hyperlink{class_enemy_a2a72c8cd4fa35f99610bd839abcd93cc}{wavepoint\+I
 
 Метод уничтожения обьекта 
 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_ac8eb629ba2895e86aa7f940334c94c02_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_enemy_a5d6489f72b20ed5b03ab737638a6ef07}\label{class_enemy_a5d6489f72b20ed5b03ab737638a6ef07}} 
 \index{Enemy@{Enemy}!GetNextWaypoint@{GetNextWaypoint}}
 \index{GetNextWaypoint@{GetNextWaypoint}!Enemy@{Enemy}}
@@ -72,7 +96,23 @@ int \mbox{\hyperlink{class_enemy_a2a72c8cd4fa35f99610bd839abcd93cc}{wavepoint\+I
 
 Метод для получения следующей точки перемещения 
 
-Обект будет уничтожен после получении последней точки пермещения и игроку нанесется урон \mbox{\Hypertarget{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5}\label{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5}} 
+Обект будет уничтожен после получении последней точки пермещения и игроку нанесется урон Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_a5d6489f72b20ed5b03ab737638a6ef07_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_enemy_a5d6489f72b20ed5b03ab737638a6ef07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5}\label{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5}} 
 \index{Enemy@{Enemy}!ReachTheEnd@{ReachTheEnd}}
 \index{ReachTheEnd@{ReachTheEnd}!Enemy@{Enemy}}
 \doxysubsubsection{\texorpdfstring{ReachTheEnd()}{ReachTheEnd()}}
@@ -82,7 +122,15 @@ int \mbox{\hyperlink{class_enemy_a2a72c8cd4fa35f99610bd839abcd93cc}{wavepoint\+I
 
 Метод для уменьшения жизней игрока 
 
-Жизни уменьшаются если враг доходит до конца \mbox{\Hypertarget{class_enemy_ae3442338205f74a157f1a311640e84eb}\label{class_enemy_ae3442338205f74a157f1a311640e84eb}} 
+Жизни уменьшаются если враг доходит до конца Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_ab62a57ae3f602fb7cee9869e815e43e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_enemy_ae3442338205f74a157f1a311640e84eb}\label{class_enemy_ae3442338205f74a157f1a311640e84eb}} 
 \index{Enemy@{Enemy}!Start@{Start}}
 \index{Start@{Start}!Enemy@{Enemy}}
 \doxysubsubsection{\texorpdfstring{Start()}{Start()}}
@@ -102,17 +150,41 @@ Start\+: Одна из функций событий, вызывается пе�
 
 Метод получения урона 
 
-\char`\"{}int damage\char`\"{} количество получаемого урона \mbox{\Hypertarget{class_enemy_a80560cd7c04c1c0846715740bad699d1}\label{class_enemy_a80560cd7c04c1c0846715740bad699d1}} 
+\char`\"{}int damage\char`\"{} количество получаемого урона Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_enemy_a12672c4031953055b32228f1ff4d8d7a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_a12672c4031953055b32228f1ff4d8d7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_enemy_a80560cd7c04c1c0846715740bad699d1}\label{class_enemy_a80560cd7c04c1c0846715740bad699d1}} 
 \index{Enemy@{Enemy}!Update@{Update}}
 \index{Update@{Update}!Enemy@{Enemy}}
 \doxysubsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void Enemy.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void Enemy.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 Мeтод перемещения обьекта от одной точки к другой 
 
-Update\+: Одна из функций событий, \mbox{\hyperlink{class_enemy_a80560cd7c04c1c0846715740bad699d1}{Update()}} вызывается один раз за кадр. Это основное событие для прорисовки кадра. 
+Update\+: Одна из функций событий, \mbox{\hyperlink{class_enemy_a80560cd7c04c1c0846715740bad699d1}{Update()}} вызывается один раз за кадр. Это основное событие для прорисовки кадра. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_a80560cd7c04c1c0846715740bad699d1_cgraph}
+\end{center}
+\end{figure}
+
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{class_enemy_a0c22e3b96d3c5a4d5b278188b5ba3cfb}\label{class_enemy_a0c22e3b96d3c5a4d5b278188b5ba3cfb}} 

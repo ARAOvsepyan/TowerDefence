@@ -1,0 +1,8 @@
+<map id="TowerPrint.GetSellCost" name="TowerPrint.GetSellCost">
+<area shape="rect" id="node1" title="Функция выбора количества полученых денег с продажи башни" alt="" coords="557,31,715,57"/>
+<area shape="rect" id="node2" href="$class_node_u_i.html#acf78428585995a7b0797e38343401036" title="Функция вызова панели для улучшения или продажи" alt="" coords="375,5,509,32"/>
+<area shape="rect" id="node5" href="$class_node.html#aee8855ca15fdc612e67fcbfd82b391fd" title="Функция продажи башни" alt="" coords="386,56,498,83"/>
+<area shape="rect" id="node3" href="$class_build.html#a3ca1e9582eb316849ae3d70ff3f53217" title="Функция выбора поля игры для постройки башни" alt="" coords="197,5,327,32"/>
+<area shape="rect" id="node4" href="$class_node.html#a19932b50442315b328e96987ea7cdbe1" title=" " alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node6" href="$class_node_u_i.html#a3cf94e06d8487a629ddbb01c3ff57753" title="Кнопка для продажи" alt="" coords="217,56,307,83"/>
+</map>

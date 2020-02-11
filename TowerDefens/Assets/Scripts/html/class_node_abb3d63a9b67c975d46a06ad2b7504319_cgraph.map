@@ -1,0 +1,4 @@
+<map id="Node.BuildTower" name="Node.BuildTower">
+<area shape="rect" id="node1" title="Функция для постройки башни на поле игры" alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$class_node.html#afa0fce3455cabf190ff038f3b677a723" title=" " alt="" coords="172,5,325,32"/>
+</map>

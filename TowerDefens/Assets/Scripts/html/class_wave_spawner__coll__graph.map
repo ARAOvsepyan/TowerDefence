@@ -1,0 +1,4 @@
+<map id="WaveSpawner" name="WaveSpawner">
+<area shape="rect" id="node1" title="Класс создания игровых волн" alt="" coords="9,80,113,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+</map>

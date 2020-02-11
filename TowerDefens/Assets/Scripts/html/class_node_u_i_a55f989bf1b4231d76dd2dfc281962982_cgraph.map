@@ -1,0 +1,7 @@
+<map id="NodeUI.Upgrade" name="NodeUI.Upgrade">
+<area shape="rect" id="node1" title="Кнопка для улучшения" alt="" coords="5,31,121,57"/>
+<area shape="rect" id="node2" href="$class_build.html#aeae6c6f630f056513c6aba8bbbc8f6d8" title="Функция отмены выбора поля игры" alt="" coords="169,5,315,32"/>
+<area shape="rect" id="node4" href="$class_node.html#a9a7da266ac5094bbff1e56eaadd8b786" title="Функция улучшения башни" alt="" coords="191,56,293,83"/>
+<area shape="rect" id="node3" href="$class_node_u_i.html#aa5077f5b0ae947b814e19ee9b17a2817" title="Функция для снятия панели" alt="" coords="392,5,487,32"/>
+<area shape="rect" id="node5" href="$class_node.html#afa0fce3455cabf190ff038f3b677a723" title=" " alt="" coords="363,56,516,83"/>
+</map>

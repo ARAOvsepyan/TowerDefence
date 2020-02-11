@@ -1,0 +1,5 @@
+<map id="GameManager.Update" name="GameManager.Update">
+<area shape="rect" id="node1" title="Функция проверки на окончание игры" alt="" coords="5,31,157,57"/>
+<area shape="rect" id="node2" href="$class_game_manager.html#a8d69157cb6b97eabeff2374d8e9adeaf" title="Функция окончания игры при проигрыше" alt="" coords="205,5,377,32"/>
+<area shape="rect" id="node3" href="$class_game_manager.html#ae9c6ba059e06645f2d714ed8320e548a" title="Функция окончания игры при выйгрыше" alt="" coords="222,56,361,83"/>
+</map>

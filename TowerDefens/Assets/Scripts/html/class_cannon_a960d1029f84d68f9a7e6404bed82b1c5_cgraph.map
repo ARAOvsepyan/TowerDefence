@@ -1,0 +1,4 @@
+<map id="Cannon.Shoot" name="Cannon.Shoot">
+<area shape="rect" id="node1" title="Функция выстрела башни" alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="$class_bullet.html#aa43f8b9d4b30d0b76017df84e07a7479" title="Функция полета снаряда до цели" alt="" coords="157,5,247,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Shop" name="Shop">
+<area shape="rect" id="node1" title="Класс Магазина" alt="" coords="352,187,404,213"/>
+<area shape="rect" id="node2" title=" " alt="" coords="406,5,516,32"/>
+<area shape="rect" id="node4" href="$class_build.html" title="Класс Постройки здания" alt="" coords="177,96,228,123"/>
+<area shape="rect" id="node5" href="$class_node.html" title="Класс Поле игры" alt="" coords="106,187,158,213"/>
+<area shape="rect" id="node6" href="$class_node_u_i.html" title="Класс Панели" alt="" coords="201,276,265,303"/>
+<area shape="rect" id="node3" href="$class_tower_print.html" title="Класс Чертежи башен" alt="" coords="161,5,244,32"/>
+</map>

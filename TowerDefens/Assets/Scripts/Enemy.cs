@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour {
      *  
      *  Update: Одна из функций событий, Update() вызывается один раз за кадр. Это основное событие для прорисовки кадра.
      */
-    void Update()
+    public void Update()
     {
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);

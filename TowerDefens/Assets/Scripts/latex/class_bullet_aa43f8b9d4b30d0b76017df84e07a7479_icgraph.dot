@@ -1,0 +1,12 @@
+digraph "Bullet.Seek"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Bullet.Seek",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Функция полета снаряда до цели"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Cannon.Shoot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cannon.html#a960d1029f84d68f9a7e6404bed82b1c5",tooltip="Функция выстрела башни"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Cannon.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cannon.html#a3f2e441177a6e5efbd743fe63d64ba14",tooltip="Функция слежки за врагом"];
+}

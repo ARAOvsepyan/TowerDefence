@@ -1,0 +1,6 @@
+<map id="Shop.SelectMortar" name="Shop.SelectMortar">
+<area shape="rect" id="node1" title="Функция выбора Башни 2" alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node2" href="$class_build.html#acffe47d512477c5a9f4f60ac75d7a26b" title=" " alt="" coords="184,5,360,32"/>
+<area shape="rect" id="node3" href="$class_build.html#aeae6c6f630f056513c6aba8bbbc8f6d8" title="Функция отмены выбора поля игры" alt="" coords="408,5,553,32"/>
+<area shape="rect" id="node4" href="$class_node_u_i.html#aa5077f5b0ae947b814e19ee9b17a2817" title="Функция для снятия панели" alt="" coords="601,5,696,32"/>
+</map>

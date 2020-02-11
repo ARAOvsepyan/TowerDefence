@@ -1,0 +1,7 @@
+<map id="Enemy.TakeDamage" name="Enemy.TakeDamage">
+<area shape="rect" id="node1" title="Метод получения урона" alt="" coords="640,31,783,57"/>
+<area shape="rect" id="node2" href="$class_bullet.html#ae96a53f82b15b06ec472fb29462926a7" title="Функция нанесения урона" alt="" coords="485,31,592,57"/>
+<area shape="rect" id="node3" href="$class_bullet.html#a2d031a499444741d54198dcaacca0a17" title="Функция взрыва снаряда" alt="" coords="331,5,437,32"/>
+<area shape="rect" id="node4" href="$class_bullet.html#a4ec14bed089bac766a33b7715cc7b296" title="Функция попадания в цель" alt="" coords="153,31,283,57"/>
+<area shape="rect" id="node5" href="$class_bullet.html#ac6941e4e535a484e4b3a86b993633572" title="Функция проприсовки полета снаряда до врага" alt="" coords="5,31,105,57"/>
+</map>

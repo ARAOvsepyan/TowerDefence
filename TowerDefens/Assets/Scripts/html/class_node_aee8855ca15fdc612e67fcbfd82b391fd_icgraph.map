@@ -1,0 +1,4 @@
+<map id="Node.SellTower" name="Node.SellTower">
+<area shape="rect" id="node1" title="Функция продажи башни" alt="" coords="144,5,256,32"/>
+<area shape="rect" id="node2" href="$class_node_u_i.html#a3cf94e06d8487a629ddbb01c3ff57753" title="Кнопка для продажи" alt="" coords="5,5,96,32"/>
+</map>

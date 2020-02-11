@@ -1,0 +1,11 @@
+<map id="Node.OnMouseDown" name="Node.OnMouseDown">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,149,83"/>
+<area shape="rect" id="node2" href="$class_node.html#abb3d63a9b67c975d46a06ad2b7504319" title="Функция для постройки башни на поле игры" alt="" coords="412,5,531,32"/>
+<area shape="rect" id="node4" href="$class_build.html#a3ca1e9582eb316849ae3d70ff3f53217" title="Функция выбора поля игры для постройки башни" alt="" coords="209,56,339,83"/>
+<area shape="rect" id="node9" href="$class_build.html#a954750de334ad33d11b9c250838e097c" title=" " alt="" coords="197,107,351,133"/>
+<area shape="rect" id="node3" href="$class_node.html#afa0fce3455cabf190ff038f3b677a723" title=" " alt="" coords="594,5,747,32"/>
+<area shape="rect" id="node5" href="$class_build.html#aeae6c6f630f056513c6aba8bbbc8f6d8" title="Функция отмены выбора поля игры" alt="" coords="399,107,544,133"/>
+<area shape="rect" id="node7" href="$class_node_u_i.html#acf78428585995a7b0797e38343401036" title="Функция вызова панели для улучшения или продажи" alt="" coords="404,56,539,83"/>
+<area shape="rect" id="node6" href="$class_node_u_i.html#aa5077f5b0ae947b814e19ee9b17a2817" title="Функция для снятия панели" alt="" coords="623,107,718,133"/>
+<area shape="rect" id="node8" href="$class_tower_print.html#a3587bd5d8bdb57b3fae4eb762d92bd03" title="Функция выбора количества полученых денег с продажи башни" alt="" coords="592,56,749,83"/>
+</map>

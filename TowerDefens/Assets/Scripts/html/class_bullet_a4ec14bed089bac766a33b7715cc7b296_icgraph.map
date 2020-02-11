@@ -1,0 +1,4 @@
+<map id="Bullet.StrikeTarget" name="Bullet.StrikeTarget">
+<area shape="rect" id="node1" title="Функция попадания в цель" alt="" coords="153,5,283,32"/>
+<area shape="rect" id="node2" href="$class_bullet.html#ac6941e4e535a484e4b3a86b993633572" title="Функция проприсовки полета снаряда до врага" alt="" coords="5,5,105,32"/>
+</map>

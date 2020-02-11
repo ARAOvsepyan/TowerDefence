@@ -3,7 +3,19 @@ digraph "NodeUI"
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{NodeUI\n|+ ui\l+ upgradeText\l+ upgradeButton\l+ sellText\l|+ SetTarget()\l+ Hide()\l+ Upgrade()\l+ Sell()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
-  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 [label="NodeUI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Класс Панели"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="MonoBehaviour",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" target" ];
+  Node3 [label="Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html",tooltip="Класс Поле игры"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" towerPrint" ];
+  Node4 [label="TowerPrint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tower_print.html",tooltip="Класс Чертежи башен"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buildManager" ];
+  Node5 [label="Build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_build.html",tooltip="Класс Постройки здания"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" selectedNode" ];
+  Node1 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nodeUI" ];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" towerToBuild" ];
+  Node5 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instance" ];
 }

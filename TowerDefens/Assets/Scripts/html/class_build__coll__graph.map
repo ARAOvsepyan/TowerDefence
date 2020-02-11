@@ -1,0 +1,7 @@
+<map id="Build" name="Build">
+<area shape="rect" id="node1" title="Класс Постройки здания" alt="" coords="93,95,144,121"/>
+<area shape="rect" id="node3" href="$class_node.html" title="Класс Поле игры" alt="" coords="167,184,219,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="63,5,174,32"/>
+<area shape="rect" id="node5" href="$class_node_u_i.html" title="Класс Панели" alt="" coords="5,273,69,300"/>
+<area shape="rect" id="node4" href="$class_tower_print.html" title="Класс Чертежи башен" alt="" coords="349,5,432,32"/>
+</map>

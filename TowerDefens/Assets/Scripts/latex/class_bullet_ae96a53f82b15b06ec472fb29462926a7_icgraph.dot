@@ -1,0 +1,15 @@
+digraph "Bullet.Damage"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Bullet.Damage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Функция нанесения урона"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Bullet.Bursting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet.html#a2d031a499444741d54198dcaacca0a17",tooltip="Функция взрыва снаряда"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Bullet.StrikeTarget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet.html#a4ec14bed089bac766a33b7715cc7b296",tooltip="Функция попадания в цель"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Bullet.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet.html#ac6941e4e535a484e4b3a86b993633572",tooltip="Функция проприсовки полета снаряда до врага"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

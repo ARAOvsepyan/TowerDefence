@@ -1,0 +1,14 @@
+digraph "Bullet.Bursting"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Bullet.Bursting",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Функция взрыва снаряда"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Bullet.Damage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bullet.html#ae96a53f82b15b06ec472fb29462926a7",tooltip="Функция нанесения урона"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Enemy.TakeDamage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_enemy.html#a12672c4031953055b32228f1ff4d8d7a",tooltip="Метод получения урона"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Enemy.Die",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_enemy.html#ac8eb629ba2895e86aa7f940334c94c02",tooltip="Метод уничтожения обьекта"];
+}

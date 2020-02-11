@@ -1,0 +1,5 @@
+<map id="Enemy.Update" name="Enemy.Update">
+<area shape="rect" id="node1" title="Мeтод перемещения обьекта от одной точки к другой" alt="" coords="5,5,113,32"/>
+<area shape="rect" id="node2" href="$class_enemy.html#a5d6489f72b20ed5b03ab737638a6ef07" title="Метод для получения следующей точки перемещения" alt="" coords="161,5,332,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#ab62a57ae3f602fb7cee9869e815e43e5" title="Метод для уменьшения жизней игрока" alt="" coords="380,5,528,32"/>
+</map>

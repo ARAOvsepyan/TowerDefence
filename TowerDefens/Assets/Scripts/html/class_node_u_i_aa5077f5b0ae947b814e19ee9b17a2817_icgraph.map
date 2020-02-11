@@ -1,0 +1,11 @@
+<map id="NodeUI.Hide" name="NodeUI.Hide">
+<area shape="rect" id="node1" title="Функция для снятия панели" alt="" coords="615,81,709,108"/>
+<area shape="rect" id="node2" href="$class_build.html#aeae6c6f630f056513c6aba8bbbc8f6d8" title="Функция отмены выбора поля игры" alt="" coords="421,81,567,108"/>
+<area shape="rect" id="node3" href="$class_build.html#a3ca1e9582eb316849ae3d70ff3f53217" title="Функция выбора поля игры для постройки башни" alt="" coords="221,5,350,32"/>
+<area shape="rect" id="node5" href="$class_build.html#acffe47d512477c5a9f4f60ac75d7a26b" title=" " alt="" coords="197,56,373,83"/>
+<area shape="rect" id="node8" href="$class_node_u_i.html#a3cf94e06d8487a629ddbb01c3ff57753" title="Кнопка для продажи" alt="" coords="240,107,331,133"/>
+<area shape="rect" id="node9" href="$class_node_u_i.html#a55f989bf1b4231d76dd2dfc281962982" title="Кнопка для улучшения" alt="" coords="227,157,343,184"/>
+<area shape="rect" id="node4" href="$class_node.html#a19932b50442315b328e96987ea7cdbe1" title=" " alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node6" href="$class_shop.html#a97404e9d4c2065fc6d6b478a42e6d679" title="Функция выбора Башни 1" alt="" coords="9,56,146,83"/>
+<area shape="rect" id="node7" href="$class_shop.html#acdb3964548d987970f2707f51ee94759" title="Функция выбора Башни 2" alt="" coords="12,107,143,133"/>
+</map>

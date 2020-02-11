@@ -1,0 +1,4 @@
+<map id="Build.NoChooseNode" name="Build.NoChooseNode">
+<area shape="rect" id="node1" title="Функция отмены выбора поля игры" alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node2" href="$class_node_u_i.html#aa5077f5b0ae947b814e19ee9b17a2817" title="Функция для снятия панели" alt="" coords="199,5,293,32"/>
+</map>

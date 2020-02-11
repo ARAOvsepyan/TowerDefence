@@ -1,0 +1,9 @@
+<map id="Node.GetBuildPosition" name="Node.GetBuildPosition">
+<area shape="rect" id="node1" title=" " alt="" coords="557,56,711,83"/>
+<area shape="rect" id="node2" href="$class_node.html#abb3d63a9b67c975d46a06ad2b7504319" title="Функция для постройки башни на поле игры" alt="" coords="203,5,321,32"/>
+<area shape="rect" id="node4" href="$class_node_u_i.html#acf78428585995a7b0797e38343401036" title="Функция вызова панели для улучшения или продажи" alt="" coords="375,56,509,83"/>
+<area shape="rect" id="node6" href="$class_node.html#a9a7da266ac5094bbff1e56eaadd8b786" title="Функция улучшения башни" alt="" coords="391,107,493,133"/>
+<area shape="rect" id="node3" href="$class_node.html#a19932b50442315b328e96987ea7cdbe1" title=" " alt="" coords="5,31,149,57"/>
+<area shape="rect" id="node5" href="$class_build.html#a3ca1e9582eb316849ae3d70ff3f53217" title="Функция выбора поля игры для постройки башни" alt="" coords="197,56,327,83"/>
+<area shape="rect" id="node7" href="$class_node_u_i.html#a55f989bf1b4231d76dd2dfc281962982" title="Кнопка для улучшения" alt="" coords="204,107,320,133"/>
+</map>

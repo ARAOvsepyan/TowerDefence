@@ -1,0 +1,4 @@
+<map id="Enemy.GetNextWaypoint" name="Enemy.GetNextWaypoint">
+<area shape="rect" id="node1" title="Метод для получения следующей точки перемещения" alt="" coords="161,5,332,32"/>
+<area shape="rect" id="node2" href="$class_enemy.html#a80560cd7c04c1c0846715740bad699d1" title="Мeтод перемещения обьекта от одной точки к другой" alt="" coords="5,5,113,32"/>
+</map>

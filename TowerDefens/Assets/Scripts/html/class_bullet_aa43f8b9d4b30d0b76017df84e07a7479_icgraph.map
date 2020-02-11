@@ -1,0 +1,5 @@
+<map id="Bullet.Seek" name="Bullet.Seek">
+<area shape="rect" id="node1" title="Функция полета снаряда до цели" alt="" coords="316,5,405,32"/>
+<area shape="rect" id="node2" href="$class_cannon.html#a960d1029f84d68f9a7e6404bed82b1c5" title="Функция выстрела башни" alt="" coords="164,5,268,32"/>
+<area shape="rect" id="node3" href="$class_cannon.html#a3f2e441177a6e5efbd743fe63d64ba14" title="Функция слежки за врагом" alt="" coords="5,5,116,32"/>
+</map>

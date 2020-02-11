@@ -1,0 +1,7 @@
+<map id="Bullet.StrikeTarget" name="Bullet.StrikeTarget">
+<area shape="rect" id="node1" title="Функция попадания в цель" alt="" coords="5,31,135,57"/>
+<area shape="rect" id="node2" href="$class_bullet.html#a2d031a499444741d54198dcaacca0a17" title="Функция взрыва снаряда" alt="" coords="183,5,289,32"/>
+<area shape="rect" id="node3" href="$class_bullet.html#ae96a53f82b15b06ec472fb29462926a7" title="Функция нанесения урона" alt="" coords="337,31,444,57"/>
+<area shape="rect" id="node4" href="$class_enemy.html#a12672c4031953055b32228f1ff4d8d7a" title="Метод получения урона" alt="" coords="492,31,635,57"/>
+<area shape="rect" id="node5" href="$class_enemy.html#ac8eb629ba2895e86aa7f940334c94c02" title="Метод уничтожения обьекта" alt="" coords="683,31,769,57"/>
+</map>

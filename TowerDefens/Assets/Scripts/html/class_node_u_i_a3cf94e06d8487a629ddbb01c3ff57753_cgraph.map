@@ -1,0 +1,7 @@
+<map id="NodeUI.Sell" name="NodeUI.Sell">
+<area shape="rect" id="node1" title="Кнопка для продажи" alt="" coords="5,31,96,57"/>
+<area shape="rect" id="node2" href="$class_build.html#aeae6c6f630f056513c6aba8bbbc8f6d8" title="Функция отмены выбора поля игры" alt="" coords="144,5,289,32"/>
+<area shape="rect" id="node4" href="$class_node.html#aee8855ca15fdc612e67fcbfd82b391fd" title="Функция продажи башни" alt="" coords="161,56,273,83"/>
+<area shape="rect" id="node3" href="$class_node_u_i.html#aa5077f5b0ae947b814e19ee9b17a2817" title="Функция для снятия панели" alt="" coords="369,5,463,32"/>
+<area shape="rect" id="node5" href="$class_tower_print.html#a3587bd5d8bdb57b3fae4eb762d92bd03" title="Функция выбора количества полученых денег с продажи башни" alt="" coords="337,56,495,83"/>
+</map>

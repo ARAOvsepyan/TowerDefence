@@ -1,0 +1,22 @@
+digraph "Build.NoChooseNode"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Build.NoChooseNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Функция отмены выбора поля игры"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Build.ChooseNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_build.html#a3ca1e9582eb316849ae3d70ff3f53217",tooltip="Функция выбора поля игры для постройки башни"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Node.OnMouseDown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html#a19932b50442315b328e96987ea7cdbe1",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Build.ChooseTowerToBuild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_build.html#acffe47d512477c5a9f4f60ac75d7a26b",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Shop.SelectCannon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shop.html#a97404e9d4c2065fc6d6b478a42e6d679",tooltip="Функция выбора Башни 1"];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Shop.SelectMortar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shop.html#acdb3964548d987970f2707f51ee94759",tooltip="Функция выбора Башни 2"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="NodeUI.Sell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node_u_i.html#a3cf94e06d8487a629ddbb01c3ff57753",tooltip="Кнопка для продажи"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="NodeUI.Upgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node_u_i.html#a55f989bf1b4231d76dd2dfc281962982",tooltip="Кнопка для улучшения"];
+}

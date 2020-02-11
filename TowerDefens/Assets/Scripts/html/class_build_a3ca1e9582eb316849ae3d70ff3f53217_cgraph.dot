@@ -1,0 +1,18 @@
+digraph "Build.ChooseNode"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Build.ChooseNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Функция выбора поля игры для постройки башни"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Build.NoChooseNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_build.html#aeae6c6f630f056513c6aba8bbbc8f6d8",tooltip="Функция отмены выбора поля игры"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NodeUI.Hide",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node_u_i.html#aa5077f5b0ae947b814e19ee9b17a2817",tooltip="Функция для снятия панели"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NodeUI.PlantTarget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node_u_i.html#acf78428585995a7b0797e38343401036",tooltip="Функция вызова панели для улучшения или продажи"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Node.GetBuildPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html#afa0fce3455cabf190ff038f3b677a723",tooltip=" "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="TowerPrint.GetSellCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tower_print.html#a3587bd5d8bdb57b3fae4eb762d92bd03",tooltip="Функция выбора количества полученых денег с продажи башни"];
+}

@@ -1,0 +1,6 @@
+<map id="Bullet.Bursting" name="Bullet.Bursting">
+<area shape="rect" id="node1" title="Функция взрыва снаряда" alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$class_bullet.html#ae96a53f82b15b06ec472fb29462926a7" title="Функция нанесения урона" alt="" coords="160,5,267,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#a12672c4031953055b32228f1ff4d8d7a" title="Метод получения урона" alt="" coords="315,5,457,32"/>
+<area shape="rect" id="node4" href="$class_enemy.html#ac8eb629ba2895e86aa7f940334c94c02" title="Метод уничтожения обьекта" alt="" coords="505,5,592,32"/>
+</map>

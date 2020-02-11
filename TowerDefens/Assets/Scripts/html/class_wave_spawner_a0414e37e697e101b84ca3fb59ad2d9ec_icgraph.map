@@ -1,0 +1,4 @@
+<map id="WaveSpawner.SpawnWave" name="WaveSpawner.SpawnWave">
+<area shape="rect" id="node1" title="Создание новых волн" alt="" coords="203,5,381,32"/>
+<area shape="rect" id="node2" href="$class_wave_spawner.html#a555153cbbe6e140062d5d4816f619e80" title="Создает новую волну каждые 3.5 секунды" alt="" coords="5,5,155,32"/>
+</map>

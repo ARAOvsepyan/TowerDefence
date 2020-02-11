@@ -1,0 +1,5 @@
+<map id="Build.ChooseTowerToBuild" name="Build.ChooseTowerToBuild">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node2" href="$class_build.html#aeae6c6f630f056513c6aba8bbbc8f6d8" title="Функция отмены выбора поля игры" alt="" coords="229,5,375,32"/>
+<area shape="rect" id="node3" href="$class_node_u_i.html#aa5077f5b0ae947b814e19ee9b17a2817" title="Функция для снятия панели" alt="" coords="423,5,517,32"/>
+</map>
