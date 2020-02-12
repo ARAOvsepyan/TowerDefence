@@ -1,39 +1,11 @@
 language: objective-c
-osx_image: xcode9.2
+osx_image: xcode8.1
 rvm:
-- 2.2         #see before_install for getting RVM stable.
-
-env:
-- TRAVIS_TAG="Deploy-2017.2.0f3" PROJECT_NAME="TowerDefence" UNITY_PROJECT_PATH="ProjectSettings" DEPLOY_UNITYPACKAGE="path set in deploy script"
-
-
-cache:
-  directories:
-    - $UNITY_DOWNLOAD_CACHE
-
-    
+- 2.2
 before_install:
-- chmod a+x ./Scripts/*.sh
-
+- chmod a+x ./Script/install.sh
+- chmod a+x ./Script/build.sh
 install:
-- cat /etc/hosts
-- ./Scripts/install-unity.sh
-
+- ./Script/install.sh
 script:
-- ./Scripts/build.sh
-- ./Scripts/run-tests.sh
-
-after_success:
-- ./Scripts/export-unity-package.sh
-
-before_deploy:
-- DEPLOY_UNITYPACKAGE="$(ls -a release/*.zip | head -n 1)"
-
-deploy:
-  provider: releases
-  api_key: $GITHUB_TOKEN
-  file: $DEPLOY_UNITYPACKAGE
-  skip_cleanup: true
-  overwrite: true
-  on:
-    tags: true 
+- ./Script/build.sh
