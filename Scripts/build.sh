@@ -1,15 +1,37 @@
-#!/bin/shBASE_URL=http://netstorage.unity3d.com/unity
-HASH=46dda1414e51
-VERSION=2017.2.0f3download() {
-  file=$1
-  url="$BASE_URL/$HASH/$package"  echo "Downloading from $url: "
-  curl -o `basename "$package"` "$url"
-}install() {
-  package=$1
-  download "$package"  echo "Installing "`basename "$package"`
-  sudo installer -dumplog -package `basename "$package"` -target /
-}# See $BASE_URL/$HASH/unity-$VERSION-$PLATFORM.ini for complete list
-# of available packages, where PLATFORM is `osx` or `win`install "MacEditorInstaller/Unity-$VERSION.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-$VERSION.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Mac-Support-for-Editor-$VERSION.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-$VERSION.pkg"
+#! /bin/sh
+
+PROJECT_PATH=$(pwd)/$UNITY_PROJECT_PATH
+UNITY_BUILD_DIR=$(pwd)/Build
+LOG_FILE=$UNITY_BUILD_DIR/unity-win.log
+
+
+ERROR_CODE=0
+echo "Items in project path ($PROJECT_PATH):"
+ls "$PROJECT_PATH"
+
+
+echo "Building project for Windows..."
+mkdir $UNITY_BUILD_DIR
+/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  -batchmode \
+  -nographics \
+  -silent-crashes \
+  -logFile \
+  -projectPath "$PROJECT_PATH" \
+  -buildWindows64Player  "$(pwd)/build/win/ci-build.exe" \
+  -quit \
+  | tee "$LOG_FILE"
+  
+if [ $? = 0 ] ; then
+  echo "Building Windows exe completed successfully."
+  ERROR_CODE=0
+else
+  echo "Building Windows exe failed. Exited with $?."
+  ERROR_CODE=1
+fi
+
+#echo 'Build logs:'
+#cat $LOG_FILE
+
+echo "Finishing with code $ERROR_CODE"
+exit $ERROR_CODE
