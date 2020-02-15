@@ -17,7 +17,7 @@ before_install:
 
 install:
 - cat /etc/hosts
-- ./travis-build/install.sh
+- ./Scripts/install.sh
 
 script:
 - ./Scripts/build.sh
