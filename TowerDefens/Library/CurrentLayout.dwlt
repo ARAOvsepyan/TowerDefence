@@ -40,9 +40,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 461
+    y: 481
     width: 835
-    height: 291
+    height: 271
   m_MinSize: {x: 104, y: 124}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 14}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 104, y: 248}
   m_MaxSize: {x: 4004, y: 8048}
   vertical: 1
-  controlID: 63
+  controlID: 44
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -123,10 +123,10 @@ MonoBehaviour:
     y: 0
     width: 232
     height: 752
-  m_MinSize: {x: 232, y: 498}
-  m_MaxSize: {x: 10002, y: 14048}
+  m_MinSize: {x: 232, y: 474}
+  m_MaxSize: {x: 10002, y: 14024}
   vertical: 1
-  controlID: 133
+  controlID: 13
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,10 +216,10 @@ MonoBehaviour:
     y: 30
     width: 1344
     height: 752
-  m_MinSize: {x: 613, y: 498}
-  m_MaxSize: {x: 18008, y: 14048}
+  m_MinSize: {x: 613, y: 474}
+  m_MaxSize: {x: 18008, y: 14024}
   vertical: 0
-  controlID: 132
+  controlID: 31
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,8 +239,8 @@ MonoBehaviour:
     y: 0
     width: 232
     height: 478
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -264,7 +264,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 835
-    height: 461
+    height: 481
   m_MinSize: {x: 104, y: 124}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 13}
@@ -324,7 +324,7 @@ MonoBehaviour:
     x: 232
     y: 68.8
     width: 831
-    height: 441
+    height: 461
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
@@ -334,7 +334,7 @@ MonoBehaviour:
       name: TowerDefens
       fullName: TowerDefens
       resultStatus: 2
-      duration: 0.2060448
+      duration: 0.12913
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -344,11 +344,11 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentID: 
-    - id: "[C:/Users/\u0410\u0440\u0438\u043A/TowerDefens/Library/ScriptAssemblies/Tests.dll][suite]"
+    - id: "[C:/Users/\u0410\u0440\u0438\u043A/TowerDefence/Library/ScriptAssemblies/Tests.dll][suite]"
       name: Tests.dll
-      fullName: "C:/Users/\u0410\u0440\u0438\u043A/TowerDefens/Library/ScriptAssemblies/Tests.dll"
+      fullName: "C:/Users/\u0410\u0440\u0438\u043A/TowerDefence/Library/ScriptAssemblies/Tests.dll"
       resultStatus: 2
-      duration: 0.151025
+      duration: 0.0893541
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -362,7 +362,7 @@ MonoBehaviour:
       name: TestSuite
       fullName: TestSuite
       resultStatus: 2
-      duration: 0.1326768
+      duration: 0.072371
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -372,18 +372,20 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentID: "[C:/Users/\u0410\u0440\u0438\u043A/TowerDefens/Library/ScriptAssemblies/Tests.dll][suite]"
-    - id: '[Tests][TestSuite.Health]'
-      name: Health
-      fullName: TestSuite.Health
+    - id: '[Tests][TestSuite.Enemy_Take_Damage]'
+      name: Enemy_Take_Damage
+      fullName: TestSuite.Enemy_Take_Damage
       resultStatus: 2
-      duration: 0.0874475
-      messages: 'System.ArgumentException : The Object you want to instantiate is
-        null.'
+      duration: 0.039631
+      messages: "System.ArgumentNullException : Value cannot be null.\r\nParameter
+        name: obj"
       output: 
-      stacktrace: "  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String
-        message) [0x00008] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:383
-        \r\n  at UnityEngine.Object.Instantiate[T] (T original) [0x0000c] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:274
-        \r\n  at TestSuite+<Health>d__1.MoveNext () [0x00023] in C:\\Users\\\u0410\u0440\u0438\u043A\\TowerDefens\\Assets\\Tests\\TestSuite.cs:13
+      stacktrace: "  at (wrapper managed-to-native) UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource_internal(UnityEngine.Object)\r\n
+        \ at UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource[TObject] (TObject
+        componentOrGameObject) [0x00007] in C:\\buildslave\\unity\\build\\Editor\\Mono\\Prefabs\\PrefabUtility.cs:1439
+        \r\n  at UnityEditor.PrefabUtility.GetPrefabParent (UnityEngine.Object obj)
+        [0x00002] in C:\\buildslave\\unity\\build\\Editor\\Mono\\Prefabs\\PrefabUtility.cs:1151
+        \r\n  at TestSuite+<Enemy_Take_Damage>d__1.MoveNext () [0x00030] in C:\\Users\\\u0410\u0440\u0438\u043A\\TowerDefence\\Assets\\Tests\\TestSuite.cs:17
         \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext
         () [0x0004b] in C:\\buildslave\\unity\\build\\Extensions\\TestRunner\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31 "
       notRunnable: 0
@@ -393,24 +395,44 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentID: '[Tests][TestSuite][suite]'
-    m_ResultText: "Health (0.087s)\n---\nSystem.ArgumentException : The Object you
-      want to instantiate is null.\n---\nat UnityEngine.Object.CheckNullArgument (System.Object
-      arg, System.String message) [0x00008] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:383
-      \r\n  at UnityEngine.Object.Instantiate[T] (T original) [0x0000c] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:274
-      \r\n  at TestSuite+<Health>d__1.MoveNext () [0x00023] in C:\\Users\\\u0410\u0440\u0438\u043A\\TowerDefens\\Assets\\Tests\\TestSuite.cs:13
+    - id: '[Tests][TestSuite.GameOver]'
+      name: GameOver
+      fullName: TestSuite.GameOver
+      resultStatus: 1
+      duration: 10.105455
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentID: '[Tests][TestSuite][suite]'
+    m_ResultText: "Enemy_Take_Damage (0.040s)\n---\nSystem.ArgumentNullException :
+      Value cannot be null.\r\nParameter name: obj\n---\nat (wrapper managed-to-native)
+      UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource_internal(UnityEngine.Object)\r\n
+      \ at UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource[TObject] (TObject
+      componentOrGameObject) [0x00007] in C:\\buildslave\\unity\\build\\Editor\\Mono\\Prefabs\\PrefabUtility.cs:1439
+      \r\n  at UnityEditor.PrefabUtility.GetPrefabParent (UnityEngine.Object obj)
+      [0x00002] in C:\\buildslave\\unity\\build\\Editor\\Mono\\Prefabs\\PrefabUtility.cs:1151
+      \r\n  at TestSuite+<Enemy_Take_Damage>d__1.MoveNext () [0x00030] in C:\\Users\\\u0410\u0440\u0438\u043A\\TowerDefence\\Assets\\Tests\\TestSuite.cs:17
       \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext
       () [0x0004b] in C:\\buildslave\\unity\\build\\Extensions\\TestRunner\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31"
-    m_ResultStacktrace: "  at UnityEngine.Object.CheckNullArgument (System.Object
-      arg, System.String message) [0x00008] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:383
-      \r\n  at UnityEngine.Object.Instantiate[T] (T original) [0x0000c] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:274
-      \r\n  at TestSuite+<Health>d__1.MoveNext () [0x00023] in C:\\Users\\\u0410\u0440\u0438\u043A\\TowerDefens\\Assets\\Tests\\TestSuite.cs:13
+    m_ResultStacktrace: "  at (wrapper managed-to-native) UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource_internal(UnityEngine.Object)\r\n
+      \ at UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource[TObject] (TObject
+      componentOrGameObject) [0x00007] in C:\\buildslave\\unity\\build\\Editor\\Mono\\Prefabs\\PrefabUtility.cs:1439
+      \r\n  at UnityEditor.PrefabUtility.GetPrefabParent (UnityEngine.Object obj)
+      [0x00002] in C:\\buildslave\\unity\\build\\Editor\\Mono\\Prefabs\\PrefabUtility.cs:1151
+      \r\n  at TestSuite+<Enemy_Take_Damage>d__1.MoveNext () [0x00030] in C:\\Users\\\u0410\u0440\u0438\u043A\\TowerDefence\\Assets\\Tests\\TestSuite.cs:17
       \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext
       () [0x0004b] in C:\\buildslave\\unity\\build\\Extensions\\TestRunner\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f3bd21db
-      m_LastClickedID: -618545677
-      m_ExpandedIDs: 25d57c9f9af68ec4343f8c37ffffff7f
+      m_SelectedIDs: d193ec6e
+      m_LastClickedID: 1860998097
+      m_ExpandedIDs: 25d57c9f9af68ec4ad073e01343f8c37ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -507,9 +529,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 232
-    y: 529.60004
+    y: 549.60004
     width: 831
-    height: 271
+    height: 251
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -531,12 +553,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 856
+    x: 1067.2001
     y: 68.8
-    width: 486
+    width: 275
     height: 732
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/build
+  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
   m_GlobalObjectTypeName: 
   m_RegisteredViewURLs:
   - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
@@ -572,7 +594,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -30560
+  m_LastSelectedObjectID: 31060
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -596,7 +618,7 @@ MonoBehaviour:
     x: 232
     y: 68.8
     width: 831
-    height: 441
+    height: 461
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: b1477e3edb6f5234db58d6ebba508eb9
   m_SceneLighting: 0
@@ -604,9 +626,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 14.346156, y: 7.3450456, z: 2.8212838}
+    m_Target: {x: 2.0744362, y: -1.2183895, z: 0.61195946}
     speed: 2
-    m_Value: {x: 14.346156, y: 7.3450456, z: 2.8212838}
+    m_Value: {x: 2.0744362, y: -1.2183895, z: 0.61195946}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -634,19 +656,19 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.40124094, y: -0.087720506, z: 0.03863803, w: -0.9109435}
+    m_Target: {x: -0.2629206, y: -0.29501727, z: 0.08480078, w: -0.9146838}
     speed: 2
-    m_Value: {x: -0.40124094, y: -0.087720506, z: 0.03863803, w: -0.9109435}
+    m_Value: {x: -0.2629206, y: -0.29501727, z: 0.08480078, w: -0.9146838}
   m_Size:
-    m_Target: 6.8347535
+    m_Target: 22
     speed: 2
-    m_Value: 6.8347535
+    m_Value: 22
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.7071068, y: -0, z: 0, w: -0.7071068}
+  m_LastSceneViewRotation: {x: -0.4377227, y: -0.5326815, z: 0.37699717, w: -0.6184839}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -681,9 +703,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a0a5ffffbea5ffff1aa6ffff94aeffffb2aeffff42afffffb4b8ffffd2b8ffff2ab9fffffcc1ffff1ac2ffff6ec2ffffe4caffff02cbffff5acbffff08d4ffff26d4ffff86d4ffffc4ddffffe2ddffff36deffff36efffff56efffffb2efffffdefbffff
+      m_SelectedIDs: 8c8f0000
+      m_LastClickedID: 36748
+      m_ExpandedIDs: 56a6ffff74a6ffffd0a6ffff86b1ffff56b3ffff74b3ffffd0b3ffff6ab4ffff88b4ffffe4b4ffff46b5ffff60b5ffffccb5ffff86b6ffffa4b6ffff00b7ffff3ab7ffff54b7ffffb4b7ffff1cb8ffff3ab8ffffb2b8ffff40b9ffff5eb9ffffc0b9ffff46baffff64baffffc6baffff40bbffff5ebbffffc0bbffff2abcffff48bcffffbcbcfffff2bcffff10bdffff84bdffff70beffff8ebefffff0beffffa0c4ffffbec4ffff20c5ffff7ac5ffff98c5fffffac5ffff8ac6ffffa8c6ffff0ec7ffff44c7ffffa6c7ffffc4c7ffff24c8ffffa2c8ffff20d1ffff3ed1ffffa0d1ffff5adaffff78daffffe2daffff9ce3ffffbae3ffff24e4ffffa4e6ffffaae6ffffacf8ffff16f9ffff34f9ffff8ef9ffffbafaffffdafaffff42fbffffdefbffffa2310000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -751,14 +773,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Tests
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: "C:\\Users\\\u0410\u0440\u0438\u043A\\TowerDefens"
+  m_LastProjectPath: "C:\\Users\\\u0410\u0440\u0438\u043A\\TowerDefence"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b0300000
-    m_LastClickedID: 12464
-    m_ExpandedIDs: 00000000da090000e4090000800a0000dc0a00003a0b0000a00b0000540c0000b0300000
+    m_SelectedIDs: ee0b0000
+    m_LastClickedID: 3054
+    m_ExpandedIDs: 00000000dc090000fc090000ee0b0000320c0000640d0000820e0000fe0f000038120000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -786,7 +808,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da090000e40900003a0a0000800a0000dc0a00003a0b0000580b0000a00b0000c00b0000540c0000
+    m_ExpandedIDs: 00000000dc090000fc090000ee0b0000320c0000640d0000820e0000fe0f000038120000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,21 +836,21 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c4050000e00500005a28000000000000
+    m_ExpandedInstanceIDs: c4050000e00500005a2800000000000048080000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: TestSuite
-      m_OriginalName: TestSuite
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 13962
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_CreateAssetUtility:
@@ -865,7 +887,7 @@ MonoBehaviour:
     x: 232
     y: 68.8
     width: 831
-    height: 441
+    height: 461
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -879,8 +901,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -332.4
     m_HBaseRangeMax: 332.4
-    m_VBaseRangeMin: -169.6
-    m_VBaseRangeMax: 169.6
+    m_VBaseRangeMin: -177.6
+    m_VBaseRangeMax: 177.6
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -899,9 +921,9 @@ MonoBehaviour:
       x: 0
       y: 17
       width: 831
-      height: 424
+      height: 444
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 415.5, y: 212}
+    m_Translation: {x: 415.5, y: 222}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -909,14 +931,14 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -415.5
-      y: -212
+      y: -222
       width: 831
-      height: 424
+      height: 444
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1038.75, y: 551.25}
+  m_LastWindowPixelSize: {x: 1038.75, y: 576.25}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000100000100

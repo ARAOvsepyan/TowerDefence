@@ -86,7 +86,7 @@ public class Bullet : MonoBehaviour
     /// Функция нанесения урона
     /// </summary>
     /// <param name="enemy">Враг</param>
-    void Damage(Transform enemy)
+    public void Damage(Transform enemy)
     {
         Enemy e = enemy.GetComponent<Enemy>();
 

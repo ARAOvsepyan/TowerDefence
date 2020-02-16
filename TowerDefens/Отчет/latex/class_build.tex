@@ -1,0 +1,243 @@
+\hypertarget{class_build}{}\doxysection{Build Class Reference}
+\label{class_build}\index{Build@{Build}}
+
+
+Класс Постройки здания  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+
+
+Collaboration diagram for Build\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_build__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_build_a3ca1e9582eb316849ae3d70ff3f53217}{Choose\+Node}} (\mbox{\hyperlink{class_node}{Node}} node)
+\begin{DoxyCompactList}\small\item\em Функция выбора поля игры для постройки башни \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_build_aeae6c6f630f056513c6aba8bbbc8f6d8}{No\+Choose\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Функция отмены выбора поля игры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_build_acffe47d512477c5a9f4f60ac75d7a26b}{Choose\+Tower\+To\+Build}} (\mbox{\hyperlink{class_tower_print}{Tower\+Print}} tower)
+\item 
+\mbox{\hyperlink{class_tower_print}{Tower\+Print}} \mbox{\hyperlink{class_build_a954750de334ad33d11b9c250838e097c}{Get\+Tower\+To\+Build}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_build_a3b250d14f0b501fb8b211148141adf0d}{Cannon\+Prefab}}
+\begin{DoxyCompactList}\small\item\em Обьект башни 1. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_build_af170c632d4d43862122faa5b2c1a1da0}{Mortar\+Prefab}}
+\begin{DoxyCompactList}\small\item\em Обьект башни 2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node_u_i}{Node\+UI}} \mbox{\hyperlink{class_build_a8604216d3a25c202e744512294924cfd}{node\+UI}}
+\begin{DoxyCompactList}\small\item\em Панель для улучшения или продажи башен \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_build}{Build}} \mbox{\hyperlink{class_build_a49eddc3dd0b1a2f9ab44eb85d94ad527}{instance}}
+\begin{DoxyCompactList}\small\item\em Реализации паттерна Singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_build_a3b5ba4064dda3b60628e38bc9b00a033}{Can\+Build}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Функция для проверки возмжности построения башни \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_build_a6e80b90576b6153f02aa3104370e5010}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Присваивает паттерн Singleton\textquotesingle{}a \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tower_print}{Tower\+Print}} \mbox{\hyperlink{class_build_acd5e71ca5468380fe278a91a91cc810c}{tower\+To\+Build}}
+\begin{DoxyCompactList}\small\item\em Чертеж башни \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}} \mbox{\hyperlink{class_build_ad8a7ddad78d19466f102bd5984207591}{selected\+Node}}
+\begin{DoxyCompactList}\small\item\em Выбранное игровое поле \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс Постройки здания 
+
+Данный класс хранит информацию о возможных зданиях для постройки, а так же функции выбора поля игры для постройки башни 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_build_a6e80b90576b6153f02aa3104370e5010}\label{class_build_a6e80b90576b6153f02aa3104370e5010}} 
+\index{Build@{Build}!Awake@{Awake}}
+\index{Awake@{Awake}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Build.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Присваивает паттерн Singleton\textquotesingle{}a 
+
+Эта функция всегда вызывается до начала любых функций, а также сразу после инициализации префаба. \mbox{\Hypertarget{class_build_a3ca1e9582eb316849ae3d70ff3f53217}\label{class_build_a3ca1e9582eb316849ae3d70ff3f53217}} 
+\index{Build@{Build}!ChooseNode@{ChooseNode}}
+\index{ChooseNode@{ChooseNode}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{ChooseNode()}{ChooseNode()}}
+{\footnotesize\ttfamily void Build.\+Choose\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция выбора поля игры для постройки башни 
+
+Если башня уже стоит появляется окно для улучшения или продажи Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_build_a3ca1e9582eb316849ae3d70ff3f53217_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_build_a3ca1e9582eb316849ae3d70ff3f53217_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_build_acffe47d512477c5a9f4f60ac75d7a26b}\label{class_build_acffe47d512477c5a9f4f60ac75d7a26b}} 
+\index{Build@{Build}!ChooseTowerToBuild@{ChooseTowerToBuild}}
+\index{ChooseTowerToBuild@{ChooseTowerToBuild}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{ChooseTowerToBuild()}{ChooseTowerToBuild()}}
+{\footnotesize\ttfamily void Build.\+Choose\+Tower\+To\+Build (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tower_print}{Tower\+Print}}}]{tower }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция выбора башни для постройки Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_build_acffe47d512477c5a9f4f60ac75d7a26b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_build_acffe47d512477c5a9f4f60ac75d7a26b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_build_a954750de334ad33d11b9c250838e097c}\label{class_build_a954750de334ad33d11b9c250838e097c}} 
+\index{Build@{Build}!GetTowerToBuild@{GetTowerToBuild}}
+\index{GetTowerToBuild@{GetTowerToBuild}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{GetTowerToBuild()}{GetTowerToBuild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tower_print}{Tower\+Print}} Build.\+Get\+Tower\+To\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция возвращает тип выбранной башни Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_build_a954750de334ad33d11b9c250838e097c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_build_aeae6c6f630f056513c6aba8bbbc8f6d8}\label{class_build_aeae6c6f630f056513c6aba8bbbc8f6d8}} 
+\index{Build@{Build}!NoChooseNode@{NoChooseNode}}
+\index{NoChooseNode@{NoChooseNode}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{NoChooseNode()}{NoChooseNode()}}
+{\footnotesize\ttfamily void Build.\+No\+Choose\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция отмены выбора поля игры 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_build_aeae6c6f630f056513c6aba8bbbc8f6d8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_build_aeae6c6f630f056513c6aba8bbbc8f6d8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_build_a3b250d14f0b501fb8b211148141adf0d}\label{class_build_a3b250d14f0b501fb8b211148141adf0d}} 
+\index{Build@{Build}!CannonPrefab@{CannonPrefab}}
+\index{CannonPrefab@{CannonPrefab}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{CannonPrefab}{CannonPrefab}}
+{\footnotesize\ttfamily Game\+Object Build.\+Cannon\+Prefab}
+
+
+
+Обьект башни 1. 
+
+\mbox{\Hypertarget{class_build_a49eddc3dd0b1a2f9ab44eb85d94ad527}\label{class_build_a49eddc3dd0b1a2f9ab44eb85d94ad527}} 
+\index{Build@{Build}!instance@{instance}}
+\index{instance@{instance}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_build}{Build}} Build.\+instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Реализации паттерна Singleton. 
+
+\mbox{\Hypertarget{class_build_af170c632d4d43862122faa5b2c1a1da0}\label{class_build_af170c632d4d43862122faa5b2c1a1da0}} 
+\index{Build@{Build}!MortarPrefab@{MortarPrefab}}
+\index{MortarPrefab@{MortarPrefab}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{MortarPrefab}{MortarPrefab}}
+{\footnotesize\ttfamily Game\+Object Build.\+Mortar\+Prefab}
+
+
+
+Обьект башни 2. 
+
+\mbox{\Hypertarget{class_build_a8604216d3a25c202e744512294924cfd}\label{class_build_a8604216d3a25c202e744512294924cfd}} 
+\index{Build@{Build}!nodeUI@{nodeUI}}
+\index{nodeUI@{nodeUI}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{nodeUI}{nodeUI}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node_u_i}{Node\+UI}} Build.\+node\+UI}
+
+
+
+Панель для улучшения или продажи башен 
+
+\mbox{\Hypertarget{class_build_ad8a7ddad78d19466f102bd5984207591}\label{class_build_ad8a7ddad78d19466f102bd5984207591}} 
+\index{Build@{Build}!selectedNode@{selectedNode}}
+\index{selectedNode@{selectedNode}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{selectedNode}{selectedNode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}} Build.\+selected\+Node\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Выбранное игровое поле 
+
+\mbox{\Hypertarget{class_build_acd5e71ca5468380fe278a91a91cc810c}\label{class_build_acd5e71ca5468380fe278a91a91cc810c}} 
+\index{Build@{Build}!towerToBuild@{towerToBuild}}
+\index{towerToBuild@{towerToBuild}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{towerToBuild}{towerToBuild}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tower_print}{Tower\+Print}} Build.\+tower\+To\+Build\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Чертеж башни 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_build_a3b5ba4064dda3b60628e38bc9b00a033}\label{class_build_a3b5ba4064dda3b60628e38bc9b00a033}} 
+\index{Build@{Build}!CanBuild@{CanBuild}}
+\index{CanBuild@{CanBuild}!Build@{Build}}
+\doxysubsubsection{\texorpdfstring{CanBuild}{CanBuild}}
+{\footnotesize\ttfamily bool Build.\+Can\+Build\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Функция для проверки возмжности построения башни 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_build_8cs}{Build.\+cs}}\end{DoxyCompactItemize}

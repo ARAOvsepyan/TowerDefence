@@ -100,7 +100,7 @@ public class Cannon : MonoBehaviour
     /// <summary>
     /// Функция выстрела башни
     /// </summary>
-    void Shoot()
+    public void Shoot()
     {
         GameObject bulletFire = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletFire.GetComponent<Bullet>();

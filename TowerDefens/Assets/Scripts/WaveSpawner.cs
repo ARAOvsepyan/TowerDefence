@@ -9,7 +9,7 @@ public class WaveSpawner : MonoBehaviour
     /// <summary>
     /// Координаты врага
     /// </summary>
-    public Transform enemyP;
+    public Object enemyP;
     /// <summary>
     /// Координаты точки появления врагов
     /// </summary>

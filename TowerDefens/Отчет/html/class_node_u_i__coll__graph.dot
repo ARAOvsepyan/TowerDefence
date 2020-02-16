@@ -1,0 +1,17 @@
+digraph "NodeUI"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="NodeUI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Класс Панели"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" target" ,fontname="Helvetica"];
+  Node2 [label="Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html",tooltip="Класс Поле игры"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" towerPrint" ,fontname="Helvetica"];
+  Node3 [label="TowerPrint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tower_print.html",tooltip="Класс Чертежи башен"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buildManager" ,fontname="Helvetica"];
+  Node4 [label="Build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_build.html",tooltip="Класс Постройки здания"];
+  Node2 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" selectedNode" ,fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nodeUI" ,fontname="Helvetica"];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" towerToBuild" ,fontname="Helvetica"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instance" ,fontname="Helvetica"];
+}

@@ -1,0 +1,225 @@
+\hypertarget{class_bullet}{}\doxysection{Bullet Class Reference}
+\label{class_bullet}\index{Bullet@{Bullet}}
+
+
+Класс Снаряда  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bullet_aa43f8b9d4b30d0b76017df84e07a7479}{Seek}} (Transform \+\_\+target)
+\begin{DoxyCompactList}\small\item\em Функция полета снаряда до цели \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_bullet_a75e914c39a4154ced3d653ae44a05539}{speed}} = 70f
+\begin{DoxyCompactList}\small\item\em Скорость полета снаряда \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_ae43965e0f022dc2342bbce7e8c8b10fc}{bursting\+Radius}} = 0f
+\begin{DoxyCompactList}\small\item\em Радиус поражения \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bullet_a30560d42f8615865e287def189618e31}{damage}} = 50
+\begin{DoxyCompactList}\small\item\em Количество нанесенного урона при попадании \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_bullet_ae5cc737c88b7159a69db3071d3a907ec}{Effect}}
+\begin{DoxyCompactList}\small\item\em Эффект попадания снаряда в цель \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bullet_ac6941e4e535a484e4b3a86b993633572}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция проприсовки полета снаряда до врага \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a4ec14bed089bac766a33b7715cc7b296}{Strike\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Функция попадания в цель \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a2d031a499444741d54198dcaacca0a17}{Bursting}} ()
+\begin{DoxyCompactList}\small\item\em Функция взрыва снаряда \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_ae96a53f82b15b06ec472fb29462926a7}{Damage}} (Transform enemy)
+\begin{DoxyCompactList}\small\item\em Функция нанесения урона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_bullet_a6cd7170f42ac9024a42160ce59c17798}{target}}
+\begin{DoxyCompactList}\small\item\em Позоция обьекта \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс Снаряда 
+
+Данный класс хранит информацию о характеристиках снаряда, а так же функции для пермещения снаряда к цели и нанесению урона 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bullet_a2d031a499444741d54198dcaacca0a17}\label{class_bullet_a2d031a499444741d54198dcaacca0a17}} 
+\index{Bullet@{Bullet}!Bursting@{Bursting}}
+\index{Bursting@{Bursting}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Bursting()}{Bursting()}}
+{\footnotesize\ttfamily void Bullet.\+Bursting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Функция взрыва снаряда 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bullet_a2d031a499444741d54198dcaacca0a17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bullet_a2d031a499444741d54198dcaacca0a17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_bullet_ae96a53f82b15b06ec472fb29462926a7}\label{class_bullet_ae96a53f82b15b06ec472fb29462926a7}} 
+\index{Bullet@{Bullet}!Damage@{Damage}}
+\index{Damage@{Damage}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Damage()}{Damage()}}
+{\footnotesize\ttfamily void Bullet.\+Damage (\begin{DoxyParamCaption}\item[{Transform}]{enemy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Функция нанесения урона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Враг\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bullet_ae96a53f82b15b06ec472fb29462926a7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bullet_ae96a53f82b15b06ec472fb29462926a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_bullet_aa43f8b9d4b30d0b76017df84e07a7479}\label{class_bullet_aa43f8b9d4b30d0b76017df84e07a7479}} 
+\index{Bullet@{Bullet}!Seek@{Seek}}
+\index{Seek@{Seek}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily void Bullet.\+Seek (\begin{DoxyParamCaption}\item[{Transform}]{\+\_\+target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция полета снаряда до цели 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+target} & Цель снаряда\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bullet_aa43f8b9d4b30d0b76017df84e07a7479_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_bullet_a4ec14bed089bac766a33b7715cc7b296}\label{class_bullet_a4ec14bed089bac766a33b7715cc7b296}} 
+\index{Bullet@{Bullet}!StrikeTarget@{StrikeTarget}}
+\index{StrikeTarget@{StrikeTarget}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{StrikeTarget()}{StrikeTarget()}}
+{\footnotesize\ttfamily void Bullet.\+Strike\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Функция попадания в цель 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bullet_a4ec14bed089bac766a33b7715cc7b296_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_bullet_a4ec14bed089bac766a33b7715cc7b296_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_bullet_ac6941e4e535a484e4b3a86b993633572}\label{class_bullet_ac6941e4e535a484e4b3a86b993633572}} 
+\index{Bullet@{Bullet}!Update@{Update}}
+\index{Update@{Update}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Bullet.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Функция проприсовки полета снаряда до врага 
+
+Вызывается один раз за кадр. Это основное событие для прорисовки кадра. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bullet_ac6941e4e535a484e4b3a86b993633572_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bullet_ae43965e0f022dc2342bbce7e8c8b10fc}\label{class_bullet_ae43965e0f022dc2342bbce7e8c8b10fc}} 
+\index{Bullet@{Bullet}!burstingRadius@{burstingRadius}}
+\index{burstingRadius@{burstingRadius}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{burstingRadius}{burstingRadius}}
+{\footnotesize\ttfamily float Bullet.\+bursting\+Radius = 0f}
+
+
+
+Радиус поражения 
+
+\mbox{\Hypertarget{class_bullet_a30560d42f8615865e287def189618e31}\label{class_bullet_a30560d42f8615865e287def189618e31}} 
+\index{Bullet@{Bullet}!damage@{damage}}
+\index{damage@{damage}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily int Bullet.\+damage = 50}
+
+
+
+Количество нанесенного урона при попадании 
+
+\mbox{\Hypertarget{class_bullet_ae5cc737c88b7159a69db3071d3a907ec}\label{class_bullet_ae5cc737c88b7159a69db3071d3a907ec}} 
+\index{Bullet@{Bullet}!Effect@{Effect}}
+\index{Effect@{Effect}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Effect}{Effect}}
+{\footnotesize\ttfamily Game\+Object Bullet.\+Effect}
+
+
+
+Эффект попадания снаряда в цель 
+
+\mbox{\Hypertarget{class_bullet_a75e914c39a4154ced3d653ae44a05539}\label{class_bullet_a75e914c39a4154ced3d653ae44a05539}} 
+\index{Bullet@{Bullet}!speed@{speed}}
+\index{speed@{speed}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Bullet.\+speed = 70f}
+
+
+
+Скорость полета снаряда 
+
+\mbox{\Hypertarget{class_bullet_a6cd7170f42ac9024a42160ce59c17798}\label{class_bullet_a6cd7170f42ac9024a42160ce59c17798}} 
+\index{Bullet@{Bullet}!target@{target}}
+\index{target@{target}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Transform Bullet.\+target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Позоция обьекта 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_bullet_8cs}{Bullet.\+cs}}\end{DoxyCompactItemize}

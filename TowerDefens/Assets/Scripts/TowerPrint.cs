@@ -30,4 +30,9 @@ public class TowerPrint
     {
         return (cost / 2);
     }
+
+    public int GetCost()
+    {
+        return cost;
+    }
 }

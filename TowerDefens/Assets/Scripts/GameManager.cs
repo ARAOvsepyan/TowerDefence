@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Функция окончания игры при проигрыше
     /// </summary>
-    void GameOver()
+    public void GameOver()
     {
         _GameOver = true;
         gameOver.SetActive(true);

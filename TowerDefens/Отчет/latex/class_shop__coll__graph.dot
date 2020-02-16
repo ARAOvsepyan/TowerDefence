@@ -1,0 +1,20 @@
+digraph "Shop"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Shop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Класс Магазина"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Mortar\nCannon" ];
+  Node2 [label="TowerPrint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tower_print.html",tooltip="Класс Чертежи башен"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buildManager" ];
+  Node3 [label="Build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_build.html",tooltip="Класс Постройки здания"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" selectedNode" ];
+  Node4 [label="Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html",tooltip="Класс Поле игры"];
+  Node2 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" towerPrint" ];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buildManager" ];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nodeUI" ];
+  Node5 [label="NodeUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node_u_i.html",tooltip="Класс Панели"];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" target" ];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" towerToBuild" ];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instance" ];
+}

@@ -42,7 +42,6 @@ public class Enemy : MonoBehaviour {
             Die();
         }
     }
-
     /// Метод уничтожения обьекта
     void Die()
     {
@@ -51,12 +50,16 @@ public class Enemy : MonoBehaviour {
         Destroy(gameObject);
     }
 
+    public void TestForDie()
+    {
+        Stats.Money += value;
+    }
     /*!
      *  \brief Мeтод перемещения обьекта от одной точки к другой
      *  
      *  Update: Одна из функций событий, Update() вызывается один раз за кадр. Это основное событие для прорисовки кадра.
      */
-    public void Update()
+    void Update()
     {
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
@@ -65,7 +68,6 @@ public class Enemy : MonoBehaviour {
             GetNextWaypoint();
         }
     }
-
     /*!
      *  \brief Метод для получения следующей точки перемещения
      *  
@@ -89,7 +91,7 @@ public class Enemy : MonoBehaviour {
      *  
      *  Жизни уменьшаются если враг доходит до конца
      */
-    void ReachTheEnd()
+    public void ReachTheEnd()
     {
         Stats.Lives -= 5;
     }
